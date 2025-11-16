@@ -1,0 +1,62 @@
+# Node
+node_modules
+
+# Build outputs
+dist/
+build/
+
+# TypeScript
+*.tsbuildinfo
+
+# dotenv
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Testing
+coverage/
+.nyc_output/
+
+# Cache
+.cache/
+.parcel-cache/
+.packager/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Misc
+tmp/
+temp/
+*.tgz
+
+# Optional: ignore local env examples if you prefer
+# .env.example
+
+# Ignore editor swap/backup files
+*~
+*.swp
+
+# Lockfiles: usually committed; uncomment to ignore if desired
+# package-lock.json
+# yarn.lock
