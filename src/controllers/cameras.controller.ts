@@ -7,7 +7,7 @@ export function healthCheck(req: Request, res: Response) {
 
 export function renderCameraPlayer(req: Request, res: Response) {
 
-    const { cameraName } = req.params;
+    const { cameraName, subtype } = req.params;
 
     const html = `<!DOCTYPE html>
         <html>
@@ -24,7 +24,7 @@ export function renderCameraPlayer(req: Request, res: Response) {
                 <script src="/rtsp-relay/index.js"></script>
                 <script>
                     window.loadPlayer({
-                        url: "ws://" + location.host + "/api/stream/${cameraName}",
+                        url: "ws://" + location.host + "/api/stream/${cameraName}/${subtype}",
                         canvas: document.getElementById("canvas")
                     });
                 </script>
