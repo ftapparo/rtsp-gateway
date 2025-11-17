@@ -1,16 +1,30 @@
 {
     "cameras": [
         {
-            "name": "camera1",
-            "description": "Câmera de teste 1",
+            "name": "1",
+            "description": "Entrada portaria principal",
+            "address": "192.168.0.103",
+            "username": "admin",
+            "password": "123Vegas!@"
+        },
+        {
+            "name": "2",
+            "description": "Camera interna clausura portaria principal",
+            "address": "192.168.0.108",
+            "username": "admin",
+            "password": "123Vegas!@"
+        },
+        {
+            "name": "3",
+            "description": "Entrada portaria de serviço - externa",
             "address": "192.168.0.106",
             "username": "admin",
             "password": "123Vegas!@"
         },
         {
-            "name": "camera2",
-            "description": "Câmera de teste 2",
-            "address": "192.168.0.107",
+            "name": "4",
+            "description": "Entrada portaria de serviço - interna",
+            "address": "192.168.0.184",
             "username": "admin",
             "password": "123Vegas!@"
         }
