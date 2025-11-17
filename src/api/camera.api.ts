@@ -36,9 +36,8 @@ export async function startServer() {
     registerCameraWebSocket(app);
 
     // Registro das rotas principais da API.
-    app.use('/', healthRoutes);
+    app.use('/api/v1', healthRoutes);
     app.use('/api/v1', camerasRoutes);
-
 
     // Middleware para tratar rotas não encontradas (404).
     app.use((_req, res) => {

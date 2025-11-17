@@ -3,7 +3,7 @@
         {
             "name": "camera1",
             "description": "Câmera de teste 1",
-            "address": "192.168.0.106",
+            "address": "192.168.0.107",
             "username": "admin",
             "password": "123Vegas!@"
         },
