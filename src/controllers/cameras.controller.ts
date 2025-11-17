@@ -4,7 +4,7 @@ export function renderCameraPlayer(req: Request, res: Response) {
     const { cameraName, subtype } = req.params;
 
     // Detecta protocolo do solicitante
-    const wsProtocol = req.protocol === 'https' ? 'wss' : 'ws';
+    const wsProtocol = req.headers['x-forwarded-proto'] === 'https' ? 'wss' : 'ws';
 
     const html = `<!DOCTYPE html>
         <html>
