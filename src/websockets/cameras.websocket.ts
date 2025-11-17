@@ -15,7 +15,7 @@ export default function registerCameraWebSocket(app: expressWs.Application) {
     // Cria uma rota WS para cada câmera
     cameras.forEach((camera: any) => {
         app.ws(
-            `/api/stream/${camera.name}/:subtype`,
+            `/stream/${camera.name}/:subtype`,
             (ws, req) => {
                 const subtype = req.params.subtype || camera.subtype || 0;
                 const streamUrl = `rtsp://${camera.username}:${camera.password}@${camera.address}:554/cam/realmonitor?channel=${camera.channel || 1}&subtype=${subtype}`;
