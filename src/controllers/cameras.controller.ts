@@ -1,13 +1,10 @@
 import { Request, Response } from 'express';
 
-export function healthCheck(req: Request, res: Response) {
-    const env = process.env.NODE_ENV || 'UNKNOWN';
-    res.status(200).json({ content: 'API Funcionando! - Ambiente: ' + env });
-};
-
 export function renderCameraPlayer(req: Request, res: Response) {
-
     const { cameraName, subtype } = req.params;
+
+    // Detecta protocolo do solicitante
+    const wsProtocol = req.protocol === 'https' ? 'wss' : 'ws';
 
     const html = `<!DOCTYPE html>
         <html>
@@ -24,7 +21,7 @@ export function renderCameraPlayer(req: Request, res: Response) {
                 <script src="/rtsp-relay/index.js"></script>
                 <script>
                     window.loadPlayer({
-                        url: "ws://" + location.host + "/api/stream/${cameraName}/${subtype}",
+                        url: "${wsProtocol}://" + location.host + "/api/stream/${cameraName}/${subtype}",
                         canvas: document.getElementById("canvas")
                     });
                 </script>
