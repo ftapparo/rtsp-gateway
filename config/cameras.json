@@ -5,84 +5,96 @@
             "description": "Entrada portaria principal",
             "address": "192.168.0.103",
             "username": "admin",
-            "password": "123Vegas!@"
+            "password": "123Vegas!@",
+            "extension": "9410"
         },
         {
             "name": "2",
             "description": "Camera interna clausura portaria principal",
             "address": "192.168.0.108",
             "username": "admin",
-            "password": "123Vegas!@"
+            "password": "123Vegas!@",
+            "extension": "9411"
         },
         {
             "name": "3",
             "description": "Entrada portaria de serviço - externa",
             "address": "192.168.0.106",
             "username": "admin",
-            "password": "123Vegas!@"
+            "password": "123Vegas!@",
+            "extension": "9420"
         },
         {
             "name": "4",
             "description": "Entrada portaria de serviço - interna",
             "address": "192.168.0.184",
             "username": "admin",
-            "password": "123Vegas!@"
+            "password": "123Vegas!@",
+            "extension": "9421"
         },
         {
             "name": "5",
-            "description": "Elevador garagem - lado direito",
-            "address": "192.168.0.119",
-            "username": "admin",
-            "password": "123Vegas!@"
-        },
-        {
-            "name": "6",
             "description": "Elevador garagem - lado esquerdo",
             "address": "192.168.0.120",
             "username": "admin",
-            "password": "123Vegas!@"
+            "password": "123Vegas!@",
+            "extension": "9014"
+        },
+        {
+            "name": "6",
+            "description": "Elevador garagem - lado direito",
+            "address": "192.168.0.119",
+            "username": "admin",
+            "password": "123Vegas!@",
+            "extension": "9058"
         },
         {
             "name": "7",
             "description": "Elevador torre A 1-4",
             "address": "192.168.0.139",
             "username": "admin",
-            "password": "123Vegas!@"
+            "password": "123Vegas!@",
+            "extension": "9114"
         },
         {
             "name": "8",
             "description": "Elevador torre A 5-8",
             "address": "192.168.0.140",
             "username": "admin",
-            "password": "123Vegas!@"
+            "password": "123Vegas!@",
+            "extension": "9158"
         },
         {
             "name": "9",
             "description": "Elevador torre B 1-4",
             "address": "192.168.0.145",
             "username": "admin",
-            "password": "123Vegas!@"
+            "password": "123Vegas!@",
+            "extension": "9214"
         },
         {
             "name": "10",
             "description": "Elevador torre B 5-8",
             "address": "192.168.0.146",
             "username": "admin",
-            "password": "123Vegas!@"
+            "password": "123Vegas!@",
+            "extension": "9258"
         },
         {
             "name": "11",
             "description": "Elevador torre C 1-4",
             "address": "192.168.0.151",
             "username": "admin",
-            "password": "123Vegas!@"
+            "password": "123Vegas!@",
+            "extension": "9314"
         },
         {
             "name": "12",
             "description": "Elevador torre C 5-8",
             "address": "192.168.0.152",
             "username": "admin",
-            "password": "123Vegas!@"
+            "password": "123Vegas!@",
+            "extension": "9358"
         }
     ]
 }

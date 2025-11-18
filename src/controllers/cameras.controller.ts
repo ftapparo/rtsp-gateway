@@ -1,4 +1,6 @@
 import { Request, Response } from 'express';
+import fs from 'fs';
+import path from 'path';
 
 export function renderCameraPlayer(req: Request, res: Response) {
     const { cameraName, subtype } = req.params;
@@ -30,4 +32,51 @@ export function renderCameraPlayer(req: Request, res: Response) {
 
     res.type("text/html");
     res.send(html);
+}
+
+export function listCameras(req: Request, res: Response) {
+    try {
+        const camerasPath = path.join(__dirname, '../../config/cameras.json');
+        const camerasData = JSON.parse(fs.readFileSync(camerasPath, 'utf-8'));
+
+        const camerasList = camerasData.cameras.map((camera: any) => ({
+            name: camera.name,
+            description: camera.description,
+            extension: camera.extension
+        }));
+
+        res.json({
+            total: camerasData.cameras.length,
+            cameras: camerasList
+        });
+    } catch (error) {
+        res.status(500).json({
+            error: 'Erro ao carregar lista de câmeras',
+            message: error instanceof Error ? error.message : 'Erro desconhecido'
+        });
+    }
+}
+
+export function getCameraByName(req: Request, res: Response) {
+    try {
+        const { name } = req.params;
+        const camerasPath = path.join(__dirname, '../../config/cameras.json');
+        const camerasData = JSON.parse(fs.readFileSync(camerasPath, 'utf-8'));
+
+        const camera = camerasData.cameras.find((cam: any) => cam.name === name);
+
+        if (!camera) {
+            return res.status(404).json({
+                error: 'Câmera não encontrada',
+                message: `Nenhuma câmera com o nome "${name}" foi encontrada`
+            });
+        }
+
+        res.json(camera);
+    } catch (error) {
+        res.status(500).json({
+            error: 'Erro ao buscar câmera',
+            message: error instanceof Error ? error.message : 'Erro desconhecido'
+        });
+    }
 }
