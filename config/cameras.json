@@ -6,7 +6,7 @@
             "address": "192.168.0.103",
             "username": "admin",
             "password": "123Vegas!@",
-            "extension": "9011"
+            "extension": null
         },
         {
             "id": 2,
@@ -14,7 +14,7 @@
             "address": "192.168.0.108",
             "username": "admin",
             "password": "123Vegas!@",
-            "extension": "9012"
+            "extension": null
         },
         {
             "id": 3,
@@ -38,7 +38,7 @@
             "address": "192.168.0.106",
             "username": "admin",
             "password": "123Vegas!@",
-            "extension": "9420"
+            "extension": "9021"
         },
         {
              "id": 6,
@@ -46,7 +46,7 @@
             "address": "192.168.0.184",
             "username": "admin",
             "password": "123Vegas!@",
-            "extension": "9421"
+            "extension": "9022"
         },
         {
              "id": 7,
@@ -54,7 +54,7 @@
             "address": "192.168.0.120",
             "username": "admin",
             "password": "123Vegas!@",
-            "extension": "9014"
+            "extension": "9514"
         },
         {
              "id": 8,
@@ -62,7 +62,7 @@
             "address": "192.168.0.119",
             "username": "admin",
             "password": "123Vegas!@",
-            "extension": "9058"
+            "extension": "9558"
         },
         {
              "id": 9,

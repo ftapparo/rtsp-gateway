@@ -10,7 +10,7 @@ router.get("/camera/list", listCameras);
 router.get("/camera/:name", getCameraByName);
 
 // HTML PLAYER dinâmico
-router.get("/player/:cameraName/:subtype", renderCameraPlayer);
+router.get("/player/:cameraId/:subtype", renderCameraPlayer);
 
 export default router;
 

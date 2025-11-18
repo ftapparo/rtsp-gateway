@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 export function renderCameraPlayer(req: Request, res: Response) {
-    const { cameraName, subtype } = req.params;
+    const { cameraId, subtype } = req.params;
 
     // Detecta protocolo do solicitante
     const wsProtocol = req.headers['x-forwarded-proto'] === 'https' ? 'wss' : 'ws';
@@ -23,7 +23,7 @@ export function renderCameraPlayer(req: Request, res: Response) {
                 <script src="/rtsp-relay/index.js"></script>
                 <script>
                     window.loadPlayer({
-                        url: "${wsProtocol}://" + location.host + "/api/stream/${cameraName}/${subtype}",
+                        url: "${wsProtocol}://" + location.host + "/api/stream/${cameraId}/${subtype}",
                         canvas: document.getElementById("canvas")
                     });
                 </script>
