@@ -40,7 +40,7 @@ export function listCameras(req: Request, res: Response) {
         const camerasData = JSON.parse(fs.readFileSync(camerasPath, 'utf-8'));
 
         const camerasList = camerasData.cameras.map((camera: any) => ({
-            name: camera.name,
+            id: camera.id,
             description: camera.description,
             extension: camera.extension
         }));

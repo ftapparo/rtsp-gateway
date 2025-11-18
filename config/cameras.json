@@ -1,23 +1,39 @@
 {
     "cameras": [
         {
-            "name": "1",
+            "id": 1,
             "description": "Entrada portaria principal",
             "address": "192.168.0.103",
             "username": "admin",
             "password": "123Vegas!@",
-            "extension": "9410"
+            "extension": "9011"
         },
         {
-            "name": "2",
-            "description": "Camera interna clausura portaria principal",
+            "id": 2,
+            "description": "Clausura portaria principal",
             "address": "192.168.0.108",
             "username": "admin",
             "password": "123Vegas!@",
-            "extension": "9411"
+            "extension": "9012"
         },
         {
-            "name": "3",
+            "id": 3,
+            "description": "Entrada de veiculos",
+            "address": "192.168.0.110",
+            "username": "admin",
+            "password": "123Vegas!@",
+            "extension": "9013"
+        },
+        {
+            "id": 4,
+            "description": "Saida de veiculos",
+            "address": "192.168.0.111",
+            "username": "admin",
+            "password": "123Vegas!@",
+            "extension": "9014"
+        },
+        {
+             "id": 5,
             "description": "Entrada portaria de serviço - externa",
             "address": "192.168.0.106",
             "username": "admin",
@@ -25,7 +41,7 @@
             "extension": "9420"
         },
         {
-            "name": "4",
+             "id": 6,
             "description": "Entrada portaria de serviço - interna",
             "address": "192.168.0.184",
             "username": "admin",
@@ -33,7 +49,7 @@
             "extension": "9421"
         },
         {
-            "name": "5",
+             "id": 7,
             "description": "Elevador garagem - lado esquerdo",
             "address": "192.168.0.120",
             "username": "admin",
@@ -41,7 +57,7 @@
             "extension": "9014"
         },
         {
-            "name": "6",
+             "id": 8,
             "description": "Elevador garagem - lado direito",
             "address": "192.168.0.119",
             "username": "admin",
@@ -49,7 +65,7 @@
             "extension": "9058"
         },
         {
-            "name": "7",
+             "id": 9,
             "description": "Elevador torre A 1-4",
             "address": "192.168.0.139",
             "username": "admin",
@@ -57,7 +73,7 @@
             "extension": "9114"
         },
         {
-            "name": "8",
+             "id": 10,
             "description": "Elevador torre A 5-8",
             "address": "192.168.0.140",
             "username": "admin",
@@ -65,7 +81,7 @@
             "extension": "9158"
         },
         {
-            "name": "9",
+             "id": 11,
             "description": "Elevador torre B 1-4",
             "address": "192.168.0.145",
             "username": "admin",
@@ -73,7 +89,7 @@
             "extension": "9214"
         },
         {
-            "name": "10",
+             "id": 12,
             "description": "Elevador torre B 5-8",
             "address": "192.168.0.146",
             "username": "admin",
@@ -81,7 +97,7 @@
             "extension": "9258"
         },
         {
-            "name": "11",
+             "id": 13,
             "description": "Elevador torre C 1-4",
             "address": "192.168.0.151",
             "username": "admin",
@@ -89,7 +105,7 @@
             "extension": "9314"
         },
         {
-            "name": "12",
+             "id": 14,
             "description": "Elevador torre C 5-8",
             "address": "192.168.0.152",
             "username": "admin",
